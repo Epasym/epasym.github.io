@@ -6,16 +6,21 @@ body {
     padding: 15px;
     background-image: url(images/IMG_20200928_182619.jpg);
     background-repeat: no-repeat;
+    background-color: #333;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .topnav {
     background-color: #272727;
     overflow: hidden;
-    opacity: 70%;
+    opacity: 90%;
+}
+.topnav tabbar{
+    background-color: #1f1f1f;
 }
 
-.topnav a {
+.topnav tab {
     font-family: "FreeMono", monospace;
     float: left;
     color: aliceblue;
@@ -25,7 +30,7 @@ body {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav tab:hover {
     background-color: #ddd;
     color: black;
 }
@@ -41,32 +46,67 @@ body {
     opacity: 80%;
 }
 
-body{
-    background-color: #333;
-}
-
 .article {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
-    background-color: #333;
+    background: rgba(53, 53, 53, 0.85);
+
     overflow: hidden;
     align-items: center;
-    opacity: 70%;
+}
+
+.article h2{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .article container {
     padding: 10px;
-    background-color: red;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 85%;
+    display: inline-block;
+    background: rgba(54, 54, 54, 0.65);
+}
+
+.article imgbox{
     display: flex;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
     flex-direction: column;
-    gap: 50px
+    float: right;
+    padding: 5px;
+    background: rgba(36, 36, 36, 0.349);
+    margin-left: 5px;
+}
+
+.article imgbar{
+    display:flex;
+    gap: 2px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.article img{
+    opacity: 100%;
+    width: 250px;
 }
 
 .article text {
-    background-color: blueviolet;
     color: aliceblue;
+    font-size: medium;
+}
+
+.article a:link{
+    color: aliceblue;
+}
+
+.article a:visited{
+    color: aliceblue;
+}
+
+.article a:hover{
+    color:aqua;
 }

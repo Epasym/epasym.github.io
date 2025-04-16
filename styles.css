@@ -14,7 +14,7 @@ body {
 .topnav {
     background-color: #272727;
     overflow: hidden;
-    opacity: 90%;
+    opacity: 70%;
 }
 .topnav tabbar{
     background-color: #1f1f1f;
@@ -53,6 +53,8 @@ body {
     padding-bottom: 10px;
     overflow: hidden;
     align-items: center;
+    font-family: monospace;
+    background: rgba(75, 75, 75, 0.363);
 }
 
 .article h2{
@@ -61,15 +63,17 @@ body {
 }
 
 .article container {
-    padding: 10px;
+    padding-top: 10px;
     padding-left: 100px;
     padding-right: 100px;
-    width: 85%;
+    margin-left: 100px;
+    padding-bottom: 30px;
+    width: 75%;
     display: inline-block;
-    background: rgba(54, 54, 54, 0.65);
+    background: rgba(54, 54, 54, 0.89);
 }
 
-.article imgbox{
+.article imgboxright{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -79,12 +83,24 @@ body {
     background: rgba(36, 36, 36, 0.349);
     margin-left: 5px;
 }
+.article imgboxleft{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    padding: 5px;
+    background: rgba(36, 36, 36, 0.349);
+    margin-right: 10px;
+}
 
 .article imgbar{
     display:flex;
     gap: 2px;
     align-items: center;
     flex-direction: row;
+    color: aliceblue;
+    font-size: small;
 }
 
 .article img{
@@ -94,7 +110,7 @@ body {
 
 .article text {
     color: aliceblue;
-    font-size: medium;
+    font-size: 11pt;
 }
 
 .article a:link{
